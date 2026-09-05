@@ -129,13 +129,13 @@
       #kv-widget-panel {
         position: fixed !important; top: 0 !important; left: 0 !important;
         right: 0 !important; bottom: 0 !important; width: 100% !important;
-        height: 100dvh !important; max-height: 100dvh !important;
+        height: auto !important; max-height: none !important;
         border-radius: 0 !important; margin: 0 !important;
       }
       #kv-widget-panel.kv-open { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; }
-      #kv-widget-header { padding-top: max(16px, env(safe-area-inset-top)) !important; border-radius: 0 !important; }
-      #kv-widget-messages { flex: 1 1 0 !important; min-height: 0 !important; overflow-y: auto !important; -webkit-overflow-scrolling: touch; }
-      #kv-widget-input-area { padding-bottom: max(16px, env(safe-area-inset-bottom)) !important; flex-shrink: 0 !important; }
+      #kv-widget-header { padding-top: max(16px, env(safe-area-inset-top)) !important; padding-left: max(16px, env(safe-area-inset-left)) !important; padding-right: max(16px, env(safe-area-inset-right)) !important; border-radius: 0 !important; }
+      #kv-widget-messages { flex: 1 1 0 !important; min-height: 0 !important; overflow-y: auto !important; -webkit-overflow-scrolling: touch; padding-left: max(0px, env(safe-area-inset-left)); padding-right: max(0px, env(safe-area-inset-right)); }
+      #kv-widget-input-area { padding-bottom: max(16px, env(safe-area-inset-bottom)) !important; padding-left: max(12px, env(safe-area-inset-left)) !important; padding-right: max(12px, env(safe-area-inset-right)) !important; flex-shrink: 0 !important; }
       #kv-widget-input { font-size: 16px !important; }
       #kv-widget-minimize { display: none !important; }
     }
@@ -488,13 +488,18 @@
   function hideCards() { var c = document.getElementById('kv-greeting-cards'); if (c) c.style.display = 'none'; }
   function togglePanel() { if (panelOpen) closePanel(); else openPanel(); }
 
+  function onViewportResize() {
+    if (!panelOpen || window.innerWidth > CONFIG.mobileBreakpoint) return;
+    var vv = window.visualViewport;
+    if (!vv) return;
+    var panel = document.getElementById('kv-widget-panel');
+    panel.style.top = vv.offsetTop + 'px';
+    panel.style.height = vv.height + 'px';
+    panel.style.bottom = 'auto';
+  }
   if (window.visualViewport) {
-    window.visualViewport.addEventListener('resize', function() {
-      if (!panelOpen || window.innerWidth > CONFIG.mobileBreakpoint) return;
-      var vv = window.visualViewport;
-      var panel = document.getElementById('kv-widget-panel');
-      panel.style.top = vv.offsetTop + 'px'; panel.style.height = vv.height + 'px'; panel.style.bottom = 'auto';
-    });
+    window.visualViewport.addEventListener('resize', onViewportResize);
+    window.visualViewport.addEventListener('scroll', onViewportResize);
   }
 
   function openPanel() {
@@ -503,9 +508,10 @@
     var panel = document.getElementById('kv-widget-panel');
     panel.classList.add('kv-open');
     if (window.innerWidth <= CONFIG.mobileBreakpoint) {
-      panel.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100dvh;max-height:100dvh;border-radius:0;';
+      panel.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;width:100%;max-height:none;border-radius:0;';
       document.body.style.overflow = 'hidden';
       document.getElementById('kv-launcher').style.display = 'none';
+      if (window.visualViewport) onViewportResize();
     }
     hideCards();
     document.getElementById('kv-widget-input').focus();
