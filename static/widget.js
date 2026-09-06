@@ -246,12 +246,12 @@
     arrowDown: '<svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6 1.41-1.41z"/></svg>'
   };
 
-  let sessionId = localStorage.getItem('mh_widget_session') || generateSessionId();
-  localStorage.setItem('mh_widget_session', sessionId);
+  let sessionId = localStorage.getItem('gb_widget_session') || generateSessionId();
+  localStorage.setItem('gb_widget_session', sessionId);
 
   let storedMessages = [];
   try {
-    const stored = localStorage.getItem('mh_widget_messages');
+    const stored = localStorage.getItem('gb_widget_messages');
     if (stored) storedMessages = JSON.parse(stored);
   } catch (e) { storedMessages = []; }
 
@@ -260,14 +260,14 @@
   }
 
   function saveMessages() {
-    localStorage.setItem('mh_widget_messages', JSON.stringify(storedMessages.slice(-CONFIG.maxStoredMessages)));
+    localStorage.setItem('gb_widget_messages', JSON.stringify(storedMessages.slice(-CONFIG.maxStoredMessages)));
   }
 
   function clearConversation() {
     storedMessages = [];
-    localStorage.removeItem('mh_widget_messages');
+    localStorage.removeItem('gb_widget_messages');
     sessionId = generateSessionId();
-    localStorage.setItem('mh_widget_session', sessionId);
+    localStorage.setItem('gb_widget_session', sessionId);
     document.getElementById('kv-widget-messages').innerHTML = '';
     addMessage(CONFIG.welcomeMessage, 'bot', false);
   }
@@ -345,7 +345,7 @@
           <input type="text" id="kv-widget-input" placeholder="${CONFIG.placeholder}">
           <button id="kv-widget-send">${icons.send}</button>
         </div>
-        <div id="kv-widget-disclaimer">&#x1F916; AI asistent (EU AI Act, cl. 50). Za rezervacijo: <a href="tel:+38641335257" style="display:inline-block;padding:10px 4px;margin:-10px 0;">041 335 257</a>.</div>
+        <div id="kv-widget-disclaimer">&#x1F916; AI asistent (EU AI Act, čl. 50). Za rezervacijo: <a href="tel:+38641335257" style="display:inline-block;padding:10px 4px;margin:-10px 0;">041 335 257</a>.</div>
         <div id="kv-widget-powered">built by: <a href="https://spoznaj-ai.si" target="_blank">spoznaj-ai.si</a></div>
       </div>
       <div id="mo-inquiry-form-view">
@@ -519,7 +519,7 @@
     if (bubbleBtn) bubbleBtn.setAttribute('aria-expanded', 'true');
     hideCards();
     document.getElementById('kv-widget-input').focus();
-    localStorage.setItem('mh_widget_open', 'true');
+    localStorage.setItem('gb_widget_open', 'true');
     var messages = document.getElementById('kv-widget-messages');
     if (messages.scrollHeight > messages.clientHeight) document.getElementById('kv-scroll-down').classList.add('kv-visible');
   }
@@ -536,7 +536,7 @@
     if (btn) { btn.innerHTML = icons.minimize; btn.title = 'Minimiziraj'; }
     var bubbleBtn = document.getElementById('kv-widget-bubble');
     if (bubbleBtn) bubbleBtn.setAttribute('aria-expanded', 'false');
-    localStorage.setItem('mh_widget_open', 'false');
+    localStorage.setItem('gb_widget_open', 'false');
     showCards();
   }
 
@@ -623,6 +623,7 @@
     addMessage(text, 'user');
     input.value = '';
     sendBtn.disabled = true;
+    input.disabled = true;
     showTyping();
     try {
       const response = await fetch(CONFIG.apiUrl, {
@@ -639,6 +640,7 @@
       addMessage('Oprostite, trenutno ni možno vzpostaviti povezave. Pokličite: 041 335 257.', 'bot');
     }
     sendBtn.disabled = false;
+    input.disabled = false;
     input.focus();
   }
 
