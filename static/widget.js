@@ -155,7 +155,7 @@
     #kv-widget-header-text h3 { margin: 0; font-size: 16px; font-weight: 700; color: #ffffff; }
     #kv-widget-header-text p { margin: 2px 0 0; font-size: 12px; color: rgba(255,255,255,0.88); }
 
-    .kv-header-btn { background: none; border: none; color: #ffffff; cursor: pointer; padding: 8px; border-radius: 8px; transition: background 0.15s; }
+    .kv-header-btn { background: none; border: none; color: #ffffff; cursor: pointer; padding: 8px; border-radius: 8px; transition: background 0.15s; min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
     .kv-header-btn:hover { background: rgba(255,255,255,0.18); }
     .kv-header-btn svg { width: 18px; height: 18px; fill: #ffffff; }
 
@@ -314,6 +314,8 @@
     } else {
       bubble.innerHTML = icons.chat;
     }
+    bubble.setAttribute('aria-label', 'Odpri pogovor s pomočnikom Kmetija Grobelnik');
+    bubble.setAttribute('aria-expanded', 'false');
     bubble.onclick = function(e) { e.stopPropagation(); e.preventDefault(); setTimeout(togglePanel, 0); };
 
     const panel = document.createElement('div');
@@ -343,7 +345,7 @@
           <input type="text" id="kv-widget-input" placeholder="${CONFIG.placeholder}">
           <button id="kv-widget-send">${icons.send}</button>
         </div>
-        <div id="kv-widget-disclaimer">&#x1F916; AI asistent (EU AI Act, cl. 50). Za rezervacijo: <a href="tel:+38631683787">041 335 257</a>.</div>
+        <div id="kv-widget-disclaimer">&#x1F916; AI asistent (EU AI Act, cl. 50). Za rezervacijo: <a href="tel:+38641335257" style="display:inline-block;padding:10px 4px;margin:-10px 0;">041 335 257</a>.</div>
         <div id="kv-widget-powered">built by: <a href="https://spoznaj-ai.si" target="_blank">spoznaj-ai.si</a></div>
       </div>
       <div id="mo-inquiry-form-view">
@@ -430,7 +432,7 @@
           </div>
           <h4>Rezervacija poslana!</h4>
           <p>Kontaktirali vas bomo v najkrajšem moznem casu.<br><br>
-          Tel: <a href="tel:+38631683787" style="color:#5C7A35;">041 335 257</a><br>info@grobelnik.si</p>
+          Tel: <a href="tel:+38641335257" style="color:#5C7A35;">041 335 257</a><br><a href="mailto:info@grobelnik.si" style="color:#5C7A35;">info@grobelnik.si</a></p>
         </div>
       </div>
     `;
@@ -513,6 +515,8 @@
       document.getElementById('kv-launcher').style.display = 'none';
       if (window.visualViewport) onViewportResize();
     }
+    var bubbleBtn = document.getElementById('kv-widget-bubble');
+    if (bubbleBtn) bubbleBtn.setAttribute('aria-expanded', 'true');
     hideCards();
     document.getElementById('kv-widget-input').focus();
     localStorage.setItem('mh_widget_open', 'true');
@@ -530,6 +534,8 @@
     document.getElementById('kv-launcher').style.display = 'flex';
     var btn = document.getElementById('kv-widget-minimize');
     if (btn) { btn.innerHTML = icons.minimize; btn.title = 'Minimiziraj'; }
+    var bubbleBtn = document.getElementById('kv-widget-bubble');
+    if (bubbleBtn) bubbleBtn.setAttribute('aria-expanded', 'false');
     localStorage.setItem('mh_widget_open', 'false');
     showCards();
   }
