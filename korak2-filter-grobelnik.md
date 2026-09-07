@@ -226,7 +226,7 @@ Lokalno (`uvicorn main:app`), nato v produkciji. Ob zagonu mora izpisati števil
 **1. Privzeto administratorsko geslo je v kodi.**
 
 ```python
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "grobelnik2026")
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "<privzeto geslo — redigirano>")
 ```
 
 `app/chat/router.py`, vrstica 21. Če spremenljivka `ADMIN_PASSWORD` v Railwayu ni nastavljena, velja to geslo — in z njim je dosegljiv `/api/admin/conversations`, ki vrne **vse pogovore vseh gostov**. Ti lahko vsebujejo osebne podatke.
