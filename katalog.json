@@ -58,7 +58,7 @@
       "vinska_klet": "Kamnita, stara 150 let, z njo hišna zbirka treh generacij.",
       "blagovna_znamka": "TAJF",
       "todo": [
-        "PREVERI PRI KLIENTU: pravilna oblika znamke — TAJF (O kmetiji), Tajf/Tajfl (Vinska degustacija), tajflwinery.com (domena partnerja). Do odgovora ne štampiljkaj ene oblike na vse."
+        "PREVERI PRI KLIENTU: pravilna letnica začetka vinogradništva — 1899 (grobelnik.si) ali 1872 (okusiposavja.si). Do odgovora uporabljaj 1899."
       ],
       "vir": "https://grobelnik.si/o-kmetiji/",
       "preverjeno": "2026-09-07"
@@ -72,9 +72,6 @@
       "leto_zacetka": 1991,
       "jubilejni_zapis": "30 let turizma na kmetiji",
       "opomba": "Stran hkrati navaja '30 let turizma' in začetek 1991. Letnic nikoli ne seštevaj — navedi samo tako, kot so zapisane.",
-      "todo": [
-        "PREVERI PRI KLIENTU: pravilna letnica začetka vinogradništva — 1899 (grobelnik.si) ali 1872 (okusiposavja.si). Do odgovora uporabljaj 1899."
-      ],
       "vir": "https://grobelnik.si/o-kmetiji/",
       "preverjeno": "2026-09-07"
     },
@@ -163,7 +160,10 @@
       "naziv": "Hišne jedi",
       "opis": "Domača kuhinja, pot od pridelka do krožnika kratka, pogosto lastna. Živila rastlinskega izvora v veliki meri pridelajo sami, živalskega pri okoliških kmetijah. Del projekta Okusi Posavja.",
       "cena": null,
-      "pravilo": "Nikoli ne naštevaj specifičnih jedi — seznam jedi in cen ni vnaprej določen. Jedilnica ni odprta za javnost brez rezervacije.",
+      "pravilo": "Nikoli ne naštevaj specifičnih jedi — seznam jedi in cen ni vnaprej določen.",
+      "todo": [
+        "PREVERI PRI KLIENTU: ali jedilnica sprejema goste brez predhodne rezervacije?"
+      ],
       "odgovor": "Naše hišne jedi temeljijo na domačih sestavinah po principu od pridelka do krožnika. Meni in cene so na poizvedbo. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
       "vir": "https://grobelnik.si/hrana/",
       "preverjeno": "2026-09-07"
@@ -358,8 +358,8 @@
       "tip": "aktivnost",
       "naziv": "Ribolov — reka Sava",
       "opis": "Za ljubitelje športnega ribolova na reki Savi je kmetija odlična izhodiščna točka. Gostom omogočamo varno shranjevanje ribiške opreme ter dodaten prostor za pripravo na ribolov.",
+      "odgovor": "Za ribiče smo odlično izhodišče — nudimo varno shranjevanje ribiške opreme in dodaten prostor za pripravo. Za informacije o ribiških dovolilnicah in lokacijah pokličite 041 335 257 ali pišite na info@grobelnik.si.",
       "cena": null,
-      "odgovor": "Tega podatka nimam. Za informacije o ribiških dovolilnicah in lokacijah pokličite 041 335 257 ali pišite na info@grobelnik.si.",
       "vir": "https://grobelnik.si/pobeg-v-posavje/",
       "preverjeno": "2026-09-07"
     },
