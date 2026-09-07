@@ -1,5 +1,5 @@
 """
-Simplified RAG search for Kovačnik V2.
+Simplified RAG search for Grobelnik AI.
 Uses BM25 for keyword matching.
 """
 from __future__ import annotations

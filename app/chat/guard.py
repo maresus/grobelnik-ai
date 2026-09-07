@@ -10,7 +10,8 @@ from app.chat import katalog
 _VZORCI = [
     ("cena",     re.compile(r"(\d+(?:[.,]\d+)?)\s*(?:EUR|€|evrov|eur)", re.I)),
     ("razdalja", re.compile(r"(\d+(?:[.,]\d+)?)\s*(?:km|kilometr\w*)", re.I)),
-    ("cas",      re.compile(r"(\d+)\s*(?:min\b|minut\w*|ur[aei]?\b)", re.I)),
+    ("cas",      re.compile(r"(\d+)\.?\s*(?:min\b|minut\w*|ur[aei]?\b)", re.I)),
+    ("ura",      re.compile(r"\b(\d{1,2})(?:[:.](\d{2})\b|\s*h\b)")),
     ("odstotek", re.compile(r"(\d+(?:[.,]\d+)?)\s*%")),
 ]
 

@@ -256,7 +256,7 @@
   } catch (e) { storedMessages = []; }
 
   function generateSessionId() {
-    return 'mh_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    return 'gb_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
   }
 
   function saveMessages() {
