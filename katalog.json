@@ -1,0 +1,656 @@
+{
+  "verzija": "2026-09-07",
+  "klient": "Turistična kmetija Grobelnik",
+  "preusmeritev": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+  "filter_dovoljeno_brat_stevilke_iz": ["cena", "kolicina", "naziv", "vkljuceno", "pogoji", "odgovor"],
+  "postavke": [
+
+    {
+      "id": "KMETIJA-KONTAKT",
+      "tip": "kontakt",
+      "naziv": "Turistična kmetija Grobelnik — kontakt",
+      "ime_lastnice": "Slavica Grobelnik",
+      "telefon": "041 335 257",
+      "telefon_mednarodni": "+386 41 335 257",
+      "email": "info@grobelnik.si",
+      "splet": "grobelnik.si",
+      "vir": "https://grobelnik.si/o-kmetiji/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "KMETIJA-LOKACIJA",
+      "tip": "lokacija",
+      "naziv": "Naslov in koordinate kmetije",
+      "naslov": "Podvrh 39, 8292 Zabukovje nad Sevnico",
+      "koordinate": "46.0387615, 15.3653368",
+      "regija": "Posavje, Slovenija",
+      "navigacija_navodilo": "Naš naslov je Podvrh 39, 8292 Zabukovje nad Sevnico. Za pot uporabite Google Maps ali nas pokličite na 041 335 257.",
+      "vir": "https://grobelnik.si/o-kmetiji/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "KMETIJA-ZGRADBA",
+      "tip": "objekt",
+      "naziv": "Objekt in prostori kmetije",
+      "opis": "Lep, topel, funkcionalen objekt, delo domačega zidarskega mojstra.",
+      "prostori": [
+        "10 dvoposteljnih sob",
+        "infra savna",
+        "finska savna",
+        "skupni družabni prostor",
+        "velika jedilnica",
+        "pokrita kamnita terasa",
+        "zelene površine"
+      ],
+      "vir": "https://grobelnik.si/o-kmetiji/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "ZGODOVINA-VINOGRADNISTVO",
+      "tip": "zgodovina",
+      "naziv": "Vinogradništvo od leta 1899",
+      "opis": "Vinogradništvo in vino se na kmetiji beležita že od leta 1899. Ohranjen je posestni list z malo manj kot dvema hektarjema vinograda na dvajsethektarskem posestvu, v takrat imenovani občini Podverh, davčnem okraju Lihtenvald, deželi Steiermark.",
+      "leto_zacetka": 1899,
+      "generacije": "Četrta generacija prevzema obveznosti in prodajo pod blagovno znamko TAJF.",
+      "vinska_klet": "Kamnita, stara 150 let, z njo hišna zbirka treh generacij.",
+      "blagovna_znamka": "TAJF",
+      "todo": [
+        "PREVERI PRI KLIENTU: pravilna oblika znamke — TAJF (O kmetiji), Tajf/Tajfl (Vinska degustacija), tajflwinery.com (domena partnerja). Do odgovora ne štampiljkaj ene oblike na vse."
+      ],
+      "vir": "https://grobelnik.si/o-kmetiji/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "ZGODOVINA-TURIZEM",
+      "tip": "zgodovina",
+      "naziv": "Turizem od leta 1991",
+      "opis": "Turizem so na kmetiji dodali leta 1991 in ga skozi leta širili. Statusna oblika: dopolnilna dejavnost na kmetiji. Začeli z vinotočem, se širili v izletniško in nastanitveno obliko.",
+      "leto_zacetka": 1991,
+      "jubilejni_zapis": "30 let turizma na kmetiji",
+      "opomba": "Stran hkrati navaja '30 let turizma' in začetek 1991. Letnic nikoli ne seštevaj — navedi samo tako, kot so zapisane.",
+      "todo": [
+        "PREVERI PRI KLIENTU: pravilna letnica začetka vinogradništva — 1899 (grobelnik.si) ali 1872 (okusiposavja.si). Do odgovora uporabljaj 1899."
+      ],
+      "vir": "https://grobelnik.si/o-kmetiji/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "CERTIFIKATI",
+      "tip": "certifikati",
+      "naziv": "Certifikati in oznake kakovosti",
+      "seznam": [
+        "Green and Safe Travel (slovenia.info)",
+        "Okusi Posavja",
+        "PRP"
+      ],
+      "vir": "https://grobelnik.si/o-kmetiji/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "SOBA-DVOPOSTELJNA",
+      "tip": "nastanitev",
+      "naziv": "Dvoposteljna soba z zajtrkom",
+      "cena": 85.00,
+      "valuta": "EUR",
+      "enota": "na sobo na noč",
+      "vkljuceno": [
+        "zajtrk",
+        "klimatska naprava s samostojno regulacijo",
+        "brezplačen brezžični internet",
+        "kabelska televizija z LCD-zaslonom",
+        "lastna kopalnica s tušem in WC",
+        "brisače",
+        "kopalne brisače",
+        "sušilnik za lase"
+      ],
+      "pogoji": ["turistična taksa ni vključena"],
+      "kolicina": 10,
+      "todo": [
+        "PREVERI PRI KLIENTU: doplačilo pri bivanju krajšem od treh noči (vir: turisticnekmetije.si, ni na grobelnik.si)",
+        "PREVERI PRI KLIENTU: velja SL ali EN cenik? EN stran navaja večerja 25 EUR/os., enoposteljna 70 EUR/dan, pes 15 EUR/dan"
+      ],
+      "vir": "https://grobelnik.si/sobe/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "SOBA-ENOPOSTELJNA",
+      "tip": "nastanitev",
+      "naziv": "Enoposteljna soba",
+      "cena": null,
+      "valuta": "EUR",
+      "enota": "na sobo na noč",
+      "odgovor": "Enoposteljna soba je na voljo po dogovoru z doplačilom. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": "https://grobelnik.si/sobe/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "VECERJA-S-SOBO",
+      "tip": "nastanitev",
+      "naziv": "Večerja ob vinski spremljavi",
+      "cena": null,
+      "valuta": "EUR",
+      "odgovor": "Večerja ob vinski spremljavi je na voljo po dogovoru z doplačilom. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "todo": [
+        "PREVERI PRI KLIENTU: velja EN cenik (25 EUR/os.) ali SL 'po dogovoru'? Do odgovora odgovarjaj 'po dogovoru'."
+      ],
+      "vir": "https://grobelnik.si/sobe/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "SAVNI",
+      "tip": "storitev",
+      "naziv": "Savni — infra in finska",
+      "seznam": ["infra savna", "finska savna"],
+      "dostop": "Na voljo gostom kmetije.",
+      "odgovor": "Na kmetiji imamo infrardečo in finsko savno za goste. Za ceno, termine in pogoje pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "cena": null,
+      "vir": "https://grobelnik.si/o-kmetiji/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "HISNE-JEDI",
+      "tip": "storitev",
+      "naziv": "Hišne jedi",
+      "opis": "Domača kuhinja, pot od pridelka do krožnika kratka, pogosto lastna. Živila rastlinskega izvora v veliki meri pridelajo sami, živalskega pri okoliških kmetijah. Del projekta Okusi Posavja.",
+      "cena": null,
+      "pravilo": "Nikoli ne naštevaj specifičnih jedi — seznam jedi in cen ni vnaprej določen. Jedilnica ni odprta za javnost brez rezervacije.",
+      "odgovor": "Naše hišne jedi temeljijo na domačih sestavinah po principu od pridelka do krožnika. Meni in cene so na poizvedbo. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": "https://grobelnik.si/hrana/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "DEGUSTACIJA",
+      "tip": "storitev",
+      "naziv": "Vinska degustacija v kleti",
+      "opis": "Degustacija v 150 let stari kamniti vinski kleti, po predhodnem dogovoru. Primerna za posameznike, zaključene družbe, skupine in teambuildinge.",
+      "cena": null,
+      "odgovor": "Vinska degustacija poteka v naši 150 let stari kleti po predhodnem dogovoru. Cena, število vin, trajanje in minimalno število oseb so na poizvedbo. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "VINSKA-ZNAMKA",
+      "tip": "info",
+      "naziv": "Blagovna znamka vin — Tajf / Tajfl",
+      "opis": "Vina, sokovi in ostale pijače so poimenovane po bližnjem potoku Vražji graben, z blagovno znamko Tajf, ki zaznamuje najboljše, prisojne vinogradniške površine.",
+      "todo": [
+        "PREVERI PRI KLIENTU: pravilna oblika — TAJF (O kmetiji), Tajf in Tajfl (Vinska degustacija), tajflwinery.com (domena). Do odgovora piši Tajf (Tajfl)."
+      ],
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "VINO-SAUVIGNON",
+      "tip": "produkt",
+      "kategorija": "vino",
+      "naziv": "Sauvignon",
+      "cena": null,
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "VINO-LASKI-RIZLING",
+      "tip": "produkt",
+      "kategorija": "vino",
+      "naziv": "Laški rizling",
+      "cena": null,
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "VINO-MODRA-FRANKINJA",
+      "tip": "produkt",
+      "kategorija": "vino",
+      "naziv": "Modra frankinja",
+      "cena": null,
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "VINO-PET-NAT",
+      "tip": "produkt",
+      "kategorija": "posebno vino",
+      "naziv": "Peneče vino pet-nat",
+      "opomba_strani": "Stran navaja: 'novo v ponudbi'.",
+      "cena": null,
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "VINO-PENINA",
+      "tip": "produkt",
+      "kategorija": "posebno vino",
+      "naziv": "Penina",
+      "opomba_strani": "Stran navaja: 'novo v ponudbi'.",
+      "cena": null,
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "SOK-SIPON",
+      "tip": "produkt",
+      "kategorija": "sok",
+      "naziv": "Naravni grozdni sok šipon",
+      "opis": "Brezalkoholno, za otroke in tiste, ki ne pijejo alkohola.",
+      "cena": null,
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "SOK-ZAMETOVKA",
+      "tip": "produkt",
+      "kategorija": "sok",
+      "naziv": "Naravni grozdni sok žametovka",
+      "opis": "Brezalkoholno, za otroke in tiste, ki ne pijejo alkohola.",
+      "cena": null,
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "ZGANJE-IZ-VINA",
+      "tip": "produkt",
+      "kategorija": "žgana pijača",
+      "naziv": "Tajf žganje iz vina",
+      "opis": "Posebna tehnologija, ki naredi žganju pitkost. Osnova za hišni vinjak.",
+      "cena": null,
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "VINJAK",
+      "tip": "produkt",
+      "kategorija": "žgana pijača",
+      "naziv": "Vinjak",
+      "opis": "Osnova je žganje kvalitetnega mladega vina, starano v hrastovih sodih. Hrastovi sodi so delo lokalnega sodarja, iz rastočih hrastov domačega gozda.",
+      "cena": null,
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "OLJE-IZ-GROZDNIH-PECKOV",
+      "tip": "produkt",
+      "kategorija": "olje",
+      "naziv": "Olje iz grozdnih pečk",
+      "opis": "Hladno stiskano. Stalni hišni izdelek.",
+      "pravilo": "Ne navajaj zdravstvenih trditev o tem produktu (ne antioksidant, ne lepša kožo, ne preprečevanje raka). Te trditve so na strani klienta, a niso v skladu z EU Uredbo 1924/2006 o zdravstvenih trditvah.",
+      "cena": null,
+      "vir": "https://grobelnik.si/vinska-degustacija/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "HISNA-PRODAJALNA",
+      "tip": "storitev",
+      "naziv": "Hišna prodajalna (Za domov)",
+      "kategorije_izdelkov": [
+        "domača vina",
+        "sokovi",
+        "posebna vina",
+        "žganja",
+        "vinjak",
+        "olje iz grozdnih pečk"
+      ],
+      "dostava": "Po dogovoru ga lahko pripeljemo ali pošljemo na vaš naslov.",
+      "nakup": "Neposredno na kmetiji, brez posrednikov.",
+      "cena": null,
+      "pravilo": "Seznam je zaključen — ne dodajaj kategorij, ki niso zgoraj. Spletne trgovine ni.",
+      "vir": "https://grobelnik.si/za-domov/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "TB-TRGATEV",
+      "tip": "teambuilding",
+      "naziv": "Trgatev grozdja z gosti",
+      "opis": "Posebno, vodeno, enodnevno doživetje. Udeleženci se opremijo v delovna oblačila in obutev, se podkrepijo s hrano in pijačo, dobijo vinogradniške škarjice. Doživijo pristno ročno trgatev. Zaključek: vinogradniška pojedina z vinom ali moštom.",
+      "trajanje": "enodnevno",
+      "cena": null,
+      "vir": "https://grobelnik.si/teambuilding/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "TB-MARTINOV-OBRED",
+      "tip": "teambuilding",
+      "naziv": "Martinov obred — krst mošta v vino",
+      "opis": "Prikaz krsta mošta v vino, pripravljen v vinski kleti za martinovo. Vodena degustacija vin z vinskim sommelier-jem.",
+      "cena": null,
+      "vir": "https://grobelnik.si/teambuilding/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "TB-VINOGRAD-IN-KLET",
+      "tip": "teambuilding",
+      "naziv": "Teambuilding v vinogradu in vinski kleti",
+      "opis": "Eno ali dvodnevno doživetje v vinogradu, vinski kleti in Ajdovskem gradcu. Sprostitvena, športna in rahlo tekmovalno naravnana vsebina. Ambient Ajdovskega gradca, vinograda, rokovanje z vinom v kleti, vinogradniška malica iz košare na travi.",
+      "trajanje": "1 ali 2 dni",
+      "lokacije": ["vinograd", "vinska klet", "Ajdovski gradec (arheološko najdišče)"],
+      "cena": null,
+      "vir": "https://grobelnik.si/teambuilding/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "AKTIVNOSTI-RIBOLOV",
+      "tip": "aktivnost",
+      "naziv": "Ribolov — reka Sava",
+      "opis": "Za ljubitelje športnega ribolova na reki Savi je kmetija odlična izhodiščna točka. Gostom omogočamo varno shranjevanje ribiške opreme ter dodaten prostor za pripravo na ribolov.",
+      "cena": null,
+      "odgovor": "Tega podatka nimam. Za informacije o ribiških dovolilnicah in lokacijah pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": "https://grobelnik.si/pobeg-v-posavje/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "AKTIVNOSTI-KOLESARJENJE",
+      "tip": "aktivnost",
+      "naziv": "Kolesarjenje v Posavju",
+      "opis": "Varno shranjevanje koles. Po predhodnem dogovoru povezava z najbližjim kolesarskim centrom. Poti od sproščenih med vinogradi do zahtevnejših vzponov.",
+      "cena": null,
+      "vir": "https://grobelnik.si/pobeg-v-posavje/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "AKTIVNOSTI-MOTORISTI",
+      "tip": "aktivnost",
+      "naziv": "Parkiranje za motoriste",
+      "opis": "Varno parkiranje motorjev pod streho.",
+      "cena": null,
+      "vir": "https://grobelnik.si/pobeg-v-posavje/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "AKTIVNOSTI-POHODNISTVO",
+      "tip": "aktivnost",
+      "naziv": "Pohodništvo in narava v okolici",
+      "opis": "Kmetija zagotavlja informacije o pohodniških poteh in hrano ter pijačo za na pot.",
+      "pohodniskie_tocke": ["Lisca", "Bohor", "Grmada", "Gorjanci"],
+      "pravilo": "Naštej samo te štiri točke. Ajdovski gradec ni pohodniška točka — je arheološko najdišče v okviru teambuildinga.",
+      "cena": null,
+      "vir": "https://grobelnik.si/pobeg-v-posavje/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "PAKET-SILVESTROVANJE-2025-26",
+      "tip": "paket",
+      "naziv": "Silvestrovanje 2025/26",
+      "leto": 2025,
+      "status": "preteklo",
+      "datum": "30. 12. 2025 – 1. 1. 2026",
+      "trajanje": "dvodnevni paket",
+      "cena": 185.00,
+      "valuta": "EUR",
+      "enota": "na osebo",
+      "vkljuceno": [
+        "namestitev v dvo-, tro- in večposteljnih sobah",
+        "silvestrska svečana pogostitev z glasbeno spremljavo",
+        "penina ob polnoči",
+        "večerja",
+        "2x zajtrk",
+        "degustacija pijač v vinski kleti z vinskim sommelier-jem",
+        "možnost nakupa domačih pijač v hišni prodajalni ob odhodu"
+      ],
+      "pogoji": [
+        "vegetarijanski meni 20 EUR na osebo doplačilo",
+        "turistična taksa ni vključena",
+        "na voljo je ena vrsta večerje"
+      ],
+      "opomba_botu": "Cena velja za 30. 12. 2025 – 1. 1. 2026. Za aktualni termin in ceno napoti na telefon 041 335 257.",
+      "vir": "https://grobelnik.si/events/event/silvestrovanje/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "PAKET-MARTINOV-2024",
+      "tip": "paket",
+      "naziv": "Martinov Tajfl paket z nočitvijo 2024",
+      "leto": 2024,
+      "status": "preteklo",
+      "datum": "8. – 12. 11. 2024",
+      "cena": 110.00,
+      "valuta": "EUR",
+      "enota": "na osebo",
+      "vkljuceno": [
+        "prihod in namestitev v dvoposteljnih sobah",
+        "vinski obisk in degustacija Tajfl pijač",
+        "martinova pojedina ob vinski spremljavi Tajf pijač",
+        "pokušina domačih žganj in vinjaka",
+        "nočitev z zajtrkom in penino",
+        "degustacija hladno stiskanega olja iz grozdnih pečk",
+        "možnost nakupa vina, sokov, žganja in olja po kletnih cenah ob odhodu"
+      ],
+      "pogoji": [
+        "vegetarijansko/dietno 5 EUR na osebo doplačilo",
+        "turistična taksa ni vključena",
+        "brezalkoholne pijače drugih proizvajalcev niso vključene",
+        "v kuhinji se pripravlja ena vrsta menija"
+      ],
+      "opomba_botu": "Cena velja za november 2024. Za aktualni termin in ceno napoti na telefon 041 335 257. Doplačilo za veg. pri tem paketu je 5 EUR, ne 20 EUR (ki velja za silvestrovanje).",
+      "vir": "https://grobelnik.si/events/event/martinov-tajfl-paket-z-nocitvijo/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "PAKET-FESTIVAL-MODRE-FRANKINJE-2021",
+      "tip": "paket",
+      "naziv": "Festival modre frankinje 2021",
+      "leto": 2021,
+      "status": "preteklo",
+      "datum": "10. 6. 2021",
+      "cena": null,
+      "opomba_botu": "Pretekli zunanji dogodek (Grad Sevnica, 2021). Brez cene. Ne omenjaj kot aktualno.",
+      "vir": "https://grobelnik.si/events/event/festival-modre-frankinje/",
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "PREPOVED-NAVIGACIJA",
+      "tip": "prepoved",
+      "naziv": "Pot, razdalje in časi vožnje",
+      "naslov": "Podvrh 39, 8292 Zabukovje nad Sevnico",
+      "koordinate": "46.0387615, 15.3653368",
+      "odgovor": "Naš naslov je Podvrh 39, 8292 Zabukovje nad Sevnico. Za pot uporabite Google Maps ali nas pokličite na 041 335 257.",
+      "opomba": "Nikoli ne navajaj avtocest, izvozov, kilometrov ali minut vožnje — tudi če gost vztraja. Opisa poti, razdalj in časov na strani ni.",
+      "todo": [
+        "PREVERI PRI KLIENTU: dejanska razdalja in čas vožnje iz Sevnice. Ko dobiš odgovor, ga zapiši kot novo postavko in šele nato dovoli botu, da ga uporabi."
+      ]
+    },
+
+    {
+      "id": "PREPOVED-ZDRAVSTVENE-TRDITVE",
+      "tip": "prepoved",
+      "naziv": "Zdravstvene trditve o produktih",
+      "odgovor": "To ni moje področje. Sem pomočnik Turistične kmetije Grobelnik.",
+      "opomba": "Ne navajaj zdravstvenih učinkov produktov (antioksidant, lepša koža, preprečevanje raka). Velja zlasti za olje iz grozdnih pečk. EU Uredba 1924/2006."
+    },
+
+    {
+      "id": "NI-PODATKA-URA-PRIJAVE",
+      "tip": "ni_podatka",
+      "naziv": "Ura prijave in odjave",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-TURISTICNA-TAKSA",
+      "tip": "ni_podatka",
+      "naziv": "Znesek turistične takse",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-PLACILNA-SREDSTVA",
+      "tip": "ni_podatka",
+      "naziv": "Plačilna sredstva (gotovina, kartica)",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-ODPIRALNI-CAS",
+      "tip": "ni_podatka",
+      "naziv": "Odpiralni čas recepcije ali prodajalne",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-ARO",
+      "tip": "ni_podatka",
+      "naziv": "Ara in pogoji rezervacije",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-POGOJI-ODPOVEDI",
+      "tip": "ni_podatka",
+      "naziv": "Pogoji odpovedi rezervacije",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-CENA-DEGUSTACIJE",
+      "tip": "ni_podatka",
+      "naziv": "Cena vinske degustacije, trajanje, minimalno število oseb",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-CENA-TEAMBUILDINGA",
+      "tip": "ni_podatka",
+      "naziv": "Cene in pogoji teambuildinga",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-CENE-PRODAJALNE",
+      "tip": "ni_podatka",
+      "naziv": "Cene izdelkov v hišni prodajalni, volumni",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-KAPACITETA-JEDILNICE",
+      "tip": "ni_podatka",
+      "naziv": "Kapaciteta jedilnice (število oseb)",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-HISNI-LJUBIMCKI",
+      "tip": "ni_podatka",
+      "naziv": "Hišni ljubljenčki (ali so dovoljeni, cena)",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "todo": [
+        "PREVERI PRI KLIENTU: EN stran navaja 15 EUR/dan za psa — velja ali ne?"
+      ],
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-DOSTOPNOST-INVALIDI",
+      "tip": "ni_podatka",
+      "naziv": "Dostopnost za gibalno ovirane",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-ALERGENI",
+      "tip": "ni_podatka",
+      "naziv": "Alergeni v hrani",
+      "odgovor": "Tega podatka nimam. Za informacije o alergebnih pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-CENA-SAVNE",
+      "tip": "ni_podatka",
+      "naziv": "Cena in termini savne, kaj prinesti, izposoja",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-MIN-STEVILO-OSEB",
+      "tip": "ni_podatka",
+      "naziv": "Minimalno število oseb za rezervacijo (soba, degustacija, TB)",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-DOPLAČILO-3-NOCI",
+      "tip": "ni_podatka",
+      "naziv": "Doplačilo pri bivanju krajšem od treh noči",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "todo": [
+        "PREVERI PRI KLIENTU: ali doplačilo velja in kolikšno je (vir: turisticnekmetije.si, ni na grobelnik.si)"
+      ],
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    },
+
+    {
+      "id": "NI-PODATKA-CENA-VECERJE",
+      "tip": "ni_podatka",
+      "naziv": "Cena večerje ob vinski spremljavi",
+      "odgovor": "Tega podatka nimam. Pokličite 041 335 257 ali pišite na info@grobelnik.si.",
+      "todo": [
+        "PREVERI PRI KLIENTU: EN stran navaja 25 EUR/os. — velja ali ne? Do odgovora odgovarjaj 'po dogovoru'."
+      ],
+      "vir": null,
+      "preverjeno": "2026-09-07"
+    }
+
+  ]
+}
