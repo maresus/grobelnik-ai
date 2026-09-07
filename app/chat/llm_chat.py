@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 from openai import OpenAI
 from app.rag.search import get_context
+from app.chat.guard import preveri
 
 _SYSTEM_PROMPT_PATH = Path(__file__).parent / "prompts" / "system.txt"
 _DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-4.1-mini").strip()
@@ -44,4 +45,6 @@ def chat(message: str, history: list[dict] | None = None, client: OpenAI | None 
     reply = (response.choices[0].message.content or "").strip()
     if not reply:
         reply = "Oprostite, nisem razumel vprašanja. Pokličite nas: 041 335 257"
+
+    reply, _ = preveri(reply)
     return {"reply": reply}

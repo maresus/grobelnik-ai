@@ -18,7 +18,7 @@ _inquiries: list[dict] = []
 _MAX_STORED = 5000
 
 ADMIN_EMAIL = os.getenv("ADMIN_EMAIL", "")
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "grobelnik2026")
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
 SMTP_HOST = os.getenv("SMTP_HOST", "")
 SMTP_PORT = int(os.getenv("SMTP_PORT", "587"))
 SMTP_USER = os.getenv("SMTP_USER", "")
@@ -66,7 +66,7 @@ def _send_email(to: str, subject: str, html: str) -> bool:
 
 
 def _check_admin(key: str) -> None:
-    if key != ADMIN_PASSWORD:
+    if not ADMIN_PASSWORD or key != ADMIN_PASSWORD:
         raise HTTPException(status_code=401, detail="Unauthorized")
 
 

@@ -9,6 +9,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from app.chat.router import router as chat_router, admin_router
 from app.rag.search import load_knowledge
+from app.chat import katalog
 
 app = FastAPI(title="Grobelnik AI", version="1.0.0")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
@@ -21,7 +22,8 @@ if static_dir.exists():
 def startup():
     kb_path = Path(__file__).parent / "knowledge.jsonl"
     count = load_knowledge(kb_path)
-    print(f"[startup] Grobelnik AI — {count} knowledge chunks loaded")
+    kat = katalog.nalozi()
+    print(f"[startup] Grobelnik AI — {count} knowledge chunks, {kat} katalog postavk")
 
 @app.get("/health")
 def health():
